@@ -1,3 +1,10 @@
+*{
+  font-family: 'IBM Plex Sans';
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .App {
   text-align: center;
 }
@@ -7,32 +14,472 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  position: absolute;
+  width: 100%;
+  height: 72px;
+  left: 0px;
+  top: 0px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  background-color: white;
+  z-index: 1000;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.arrow_back{
+  display: none;
+  margin-left: 2rem;
+}
+
+.join-group-header-btn{
+  display: none;
+  width: 76px;
+  height: 28px;
+  margin-right: 2rem;
+  font-size: 12px;
+  padding: 4px 10px;
+  border: 0.8px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: white;
+  background-color: transparent;
+}
+
+.atg-logo{
+  width: 162.57px;
+  height: 24px;
+}
+
+.search-bar{
+  width: 360px;
+  height: 42px;
+  background: #F2F2F2;
+  border-radius: 21px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar-input{
+  border: 0;
+  background-color: transparent;
+  width: 90%;
+  height: 95%;
+}
+.search-bar-input:focus-visible{
+  outline: none;
+}
+
+.login-btn,
+.user-profile-btn{
+  border: 0;
+  background-color: transparent;
+}
+
+.login-btn{
+  color: blue;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.login-btn:hover{
+  text-decoration: underline;
+}
+
+.group_background_image{
+  width: 100%;
+  margin-top: 4.5rem;
+}
+
+.group_background_image img{
+  width: 100%;
+}
+
+.group_background_image_mobile{
+  display: none;
+}
+
+
+.group_background_image::after{
+  display: block;
+  position: relative;
+  margin-top: -350px;
+  height: 350px;
+  width: 100%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+  content: '';
+}
+
+.group-info{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  font-family: IBM Plex Sans;
+  margin-top: -15%;
+  margin-left: 15%;
+}
+
+.group-name{
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.group-sub-heading{
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.group-body{
+  padding: 1rem 15%;
+}
+
+.desktop-filter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.nav-tabs{
+  border-bottom: 0;
+}
+
+.filter-item .filter-btn{
+  border: 0;
+  background-color: transparent;
+  padding: 1rem 0.75rem;
+}
+
+.filter-item .filter-btn.active{
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+.group-btns{
+  display: flex;
+  flex-direction: row;
+}
+
+.write-post-btn{
+  width: 133px;
+  height: 36px;
+  background: #EDEEF0;
+  border: 0;
+  border-radius: 4px;
+}
+
+.join-group-btn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 36px;
+  background: #2F6CE5;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  margin-left: 1rem;
+}
+
+.mobile-filter-div{
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.15rem;
+}
+
+.mobile-filter-div span{
+  margin-left: 2rem;
+}
+
+#mobile-filter{
+  width: 106px;
+  height: 32px;
+  background: #F1F3F5;
+  border-radius: 4px;
+  border: 0;
+  margin-right: 2rem;
+}
+
+.group-page-body{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.group-posts-div{
+  width: 60%;
+}
+
+.sidebar{
+  width: 35%;
+  margin-top: 2rem;
+}
+
+.group-post{
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  margin-top: 2rem;
+}
+
+.post-header img{
+  width: 100%;
+}
+
+.post-type-div,
+.post-heading-div,
+.post-text-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.post-type-div span,
+.post-heading-div span,
+.post-text-div span{
+  text-align: start;
+}
+
+.post-type-div span{
+  font-size: 1.125rem;
+}
+
+.post-heading-div span{
+  width: 80%;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.dropdown-toggle{
+  margin-right: 1rem;
+}
+
+.dropdown-toggle::after{
+  content: none;
+}
+
+.post-text-div span{
+  font-weight: 400;
+  font-size: 1.130rem;
+  width: 90%;
+}
+
+.meetup-job-info-div{
+  display: flex;
+  flex-direction: column;
+}
+
+.location-date-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.location-date-div div{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.location span,
+.date span,
+.company-name span{
+  margin-left: 0.5rem;
+}
+
+.post-link-btn button,
+.job-link-btn button{
+  width: 95%;
+  height: 38px;
+  margin-top: 1rem;
+  background: #FFFFFF;
+  border: 0.7px dashed #A9AEB8;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.post-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.author-info-div{
+  margin-left: 1rem;
+}
+
+.author-profile-image{
+  height: 36px;
+  width: 36px;
+}
+
+.author-name{
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 0.75rem;
+}
+
+.post-info-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.post-view-count{
+  margin-right: 1rem;
+}
+
+.views-icon{
+  width: 18px;
+  height: 18px;
+  margin-right: 0.25rem;
+}
+
+.views-count{
+  color: #525252;
+  font-size: 14px;
+}
+
+.share-btn-div{
+  margin-right: 1rem;
+}
+
+.share-btn{
+  border: 0;
+  background-color: #EDEEF0;
+  border-radius: 2px;
+  height: 36px;
+  width: 36px;
+}
+
+.location-search-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.4px solid #B8B8B8;;
+}
+
+.location-input{
+  border: 0;
+  background-color: transparent;
+  margin-left: -1rem;
+}
+
+.location-input:focus-visible{
+  outline: none;
+}
+
+.sidebar-info-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.info-icon{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.info-icon img{
+  height: 14px;
+  width: 14px;
+  margin-top: 0.2rem;
+}
+
+.sidebar-info-text{
+  font-size: 12px;
+  height: 32px;
+  color: #000000;
+  opacity: 0.5;
+  text-align: start;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 940px){
+  .search-bar,
+  .atg-logo,
+  .user-info,
+  .desktop-filter,
+  .sidebar{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App-header {
+    background-color: transparent;
+    box-shadow: none;
+    justify-content: space-between;
+  }
+
+  .group_background_image{
+    margin-top: 0;
+  }
+
+  .arrow_back,
+  .join-group-header-btn{
+    display: flex;
+  }
+
+  .group-info{
+    margin-top: -4rem;
+    margin-left: 2rem;
+  }
+
+  .group-name{
+    font-size: 17px;
+  }
+  
+  .group-sub-heading{
+    font-size: 12px;
+  }
+
+  .group-body{
+    padding: 0;
+  }
+
+  .mobile-filter-div{
+    display: flex;
+  }
+
+  .group-posts-div{
+    width: 100%;
+  }
+
+  .group-post{
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+
+@media screen and (max-width: 460px){
+  .group_background_image_desktop{
+    display: none;
+  }
+
+  .group_background_image_mobile{
+    display: block;
   }
 }
