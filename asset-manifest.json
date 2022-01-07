@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/responsive-react-page/static/css/main.1c56fc5a.css",
-    "main.js": "/responsive-react-page/static/js/main.1253118f.js",
+    "main.css": "/responsive-react-page/static/css/main.6380b166.css",
+    "main.js": "/responsive-react-page/static/js/main.4f50eaae.js",
     "static/js/787.a423396b.chunk.js": "/responsive-react-page/static/js/787.a423396b.chunk.js",
     "static/media/group_background_image.png": "/responsive-react-page/static/media/group_background_image.4bae427d8d26b14da3d2.png",
     "static/media/post1.png": "/responsive-react-page/static/media/post1.be98943627886fcc149b.png",
+    "static/media/signup_login_illustration.svg": "/responsive-react-page/static/media/signup_login_illustration.ed246ed1547e500a0a73673a39968c55.svg",
     "static/media/post2.png": "/responsive-react-page/static/media/post2.52fceff308f3056b334d.png",
     "static/media/post0.png": "/responsive-react-page/static/media/post0.49fd6a86b593c8bb25a6.png",
     "static/media/group_background_image_mobile.png": "/responsive-react-page/static/media/group_background_image_mobile.54a170fc8c3ebe29929b.png",
+    "static/media/facebook_logo.svg": "/responsive-react-page/static/media/facebook_logo.7f3fe85b0183964151e10cbb7e9e717b.svg",
     "static/media/atg_logo.svg": "/responsive-react-page/static/media/atg_logo.b91f75e6ef6df274dc6968578f055a8b.svg",
+    "static/media/google_logo.svg": "/responsive-react-page/static/media/google_logo.657c760b119b98ed44a1ec5df8dc2010.svg",
     "index.html": "/responsive-react-page/index.html",
     "static/media/join_group.svg": "/responsive-react-page/static/media/join_group.bb91f6d9f6718c1154b6e6ab784649fe.svg",
     "static/media/location_icon.svg": "/responsive-react-page/static/media/location_icon.a041c6c600a1f3acdb54e2c6161daf52.svg",
@@ -18,16 +21,18 @@
     "static/media/search-icon.svg": "/responsive-react-page/static/media/search-icon.8bdeb033dbf97a73ecfd1a71f4d4ad68.svg",
     "static/media/info_icon.svg": "/responsive-react-page/static/media/info_icon.4ae058a0c8b2671a9e03c943d4b9627c.svg",
     "static/media/job_icon.svg": "/responsive-react-page/static/media/job_icon.5b5c50470ae82e63db65a599bbf2a91d.svg",
+    "static/media/like_icon.svg": "/responsive-react-page/static/media/like_icon.258f100856b33157b552dcd0debb818d.svg",
+    "static/media/cross_icon.svg": "/responsive-react-page/static/media/cross_icon.d7519f6419d1ba9d7e4ae0f16f127653.svg",
     "static/media/calender_icon.svg": "/responsive-react-page/static/media/calender_icon.27d352de032c385daa4da96d26600209.svg",
     "static/media/pencil.svg": "/responsive-react-page/static/media/pencil.b7b8d5a91b21a00314b33e6f65b2ec05.svg",
     "static/media/arrow_back.svg": "/responsive-react-page/static/media/arrow_back.4857a587139b6b62dd23fa9f7bb6ebe1.svg",
     "static/media/down_arrow_solid.svg": "/responsive-react-page/static/media/down_arrow_solid.216ea00f968a43aa89f70a811f3e9e21.svg",
-    "main.1c56fc5a.css.map": "/responsive-react-page/static/css/main.1c56fc5a.css.map",
-    "main.1253118f.js.map": "/responsive-react-page/static/js/main.1253118f.js.map",
+    "main.6380b166.css.map": "/responsive-react-page/static/css/main.6380b166.css.map",
+    "main.4f50eaae.js.map": "/responsive-react-page/static/js/main.4f50eaae.js.map",
     "787.a423396b.chunk.js.map": "/responsive-react-page/static/js/787.a423396b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c56fc5a.css",
-    "static/js/main.1253118f.js"
+    "static/css/main.6380b166.css",
+    "static/js/main.4f50eaae.js"
   ]
 }
