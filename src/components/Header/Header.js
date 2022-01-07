@@ -4,7 +4,7 @@ import UserInfo from './UserInfo';
 import atg_logo from '../../assets/img/atg_logo.svg';
 import arrow_back from '../../assets/img/arrow_back.svg';
 
-const Header = ({isLoggedIn}) => {
+const Header = ({isLoggedIn, setIsLoggedIn}) => {
   return (
     <>
     <header className="App-header">
@@ -13,7 +13,7 @@ const Header = ({isLoggedIn}) => {
 
       <img className="atg-logo" src={atg_logo} alt="atg_logo"/>
       <SearchBar/>
-      <UserInfo isLoggedIn={isLoggedIn}/>
+      <UserInfo isLoggedIn={isLoggedIn} setIsLoggedIn={ (value)=>setIsLoggedIn(value) }/>
     </header>
     </>
   )

@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <SignupLogin isLoggedIn={isLoggedIn} setIsLoggedIn={ (value)=>setIsLoggedIn(value) }/>
-      <Header isLoggedIn={isLoggedIn}/>
+      <Header isLoggedIn={isLoggedIn} setIsLoggedIn={ (value)=>setIsLoggedIn(value) }/>
       <GroupPage isLoggedIn={isLoggedIn}/>
     </div>
   );
