@@ -14,6 +14,121 @@
   pointer-events: none;
 }
 
+#login-modal .modal-dialog,
+#signup-modal .modal-dialog{
+  position: absolute;
+  top : 10%;
+  left : 22%;
+  width: 736px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+#login-modal .modal-content,
+#signup-modal .modal-content{
+  width: 736px;
+}
+
+#login-modal .modal-header,
+#signup-modal .modal-header{
+  width: 100%;
+  height: 50px;
+  background: #EFFFF4;
+  border-radius: 8px 8px 0px 0px;
+}
+
+#login-modal .modal-title,
+#signup-modal .modal-title{
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #008A45;  
+}
+
+#login-modal .close-login-modal-btn,
+#signup-modal .close-signup-modal-btn{
+  margin-top: -6rem;
+  margin-right: -1rem;
+}
+
+#login-modal .modal-body,
+#signup-modal .modal-body{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+#login-modal .modal-body div,
+#signup-modal .modal-body div{
+  width: 100%;
+}
+
+.login-heading{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.login-heading span{
+  font-weight: bold;
+  font-size: 24px;
+  text-align: left;
+}
+
+.login-header-form .form-control{
+  width: 100%;
+  height: 46px;
+  background: #F7F8FA;
+  border: 1px solid #D9D9DB;
+  border-radius: 2px 2px 0px 0px;
+}
+
+.login-header-form .login-modal-login-btn{
+  width: 100%;
+  height: 40px;
+  background: #2F6CE5;
+  border-radius: 20px;
+  margin-top: 1rem;
+}
+
+.login-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.login-footer button{
+  height: 38px;
+  width: 100%;
+  background: #FFFFFF;
+  border: 0.6px solid #D9D9DB;
+  box-sizing: border-box;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-modal-signup-btn{
+  border: 0;
+  background-color: transparent;
+  color: blue;
+}
+
+.login-modal-signup-btn:hover{
+  text-decoration: underline;
+}
+
+.signup-name-div{
+  display: flex;
+  flex-direction: row;
+}
+
 .App-header {
   position: absolute;
   width: 100%;

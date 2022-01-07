@@ -20,7 +20,7 @@ const UserInfo = ({ isLoggedIn }) => {
         (
           <>
           <span>Create Account</span>
-          <button className="login-btn">
+          <button className="login-btn" data-bs-toggle="modal" data-bs-target="#login-modal">
             <span>Its Free</span>
             <img src={down_arrow} alt="down_arrow" className="ms-1"/>
           </button>
