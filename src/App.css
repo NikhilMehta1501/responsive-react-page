@@ -343,6 +343,90 @@
   margin-top: 2rem;
 }
 
+.location-date-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.location-date-div div{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.location span,
+.date span,
+.company-name span{
+  margin-left: 0.5rem;
+}
+
+.recommended-groups-section{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.recommended-groups-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.recommended-groups-like-icon{
+  display: flex;
+  align-items: center;
+}
+
+.recommended-groups-header-text{
+  margin-left: 0.5rem;
+}
+
+.recommended-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.recommended-group-name {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.recommended-group-name span{
+  margin-left: 1rem;
+}
+
+.recommended-group-follow-btn button{
+  width: 60px;
+  height: 24px;
+  background: #EDEEF0;
+  border-radius: 14px;
+  border: 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+.recommended-groups-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.recommended-groups-footer button{
+  width: 100px;
+  border: 0;
+  background-color: transparent;
+  color: blue;
+}
+
+.recommended-groups-footer button:hover{
+  text-decoration: underline;
+}
+
 .group-post{
   display: flex;
   flex-direction: column;
@@ -399,24 +483,6 @@
 .meetup-job-info-div{
   display: flex;
   flex-direction: column;
-}
-
-.location-date-div{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.location-date-div div{
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 1rem;
-}
-
-.location span,
-.date span,
-.company-name span{
-  margin-left: 0.5rem;
 }
 
 .post-link-btn button,

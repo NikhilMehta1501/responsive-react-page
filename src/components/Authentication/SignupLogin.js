@@ -30,7 +30,7 @@ const SignupLogin = ({setIsLoggedIn}) => {
               <form className='login-header-form' onSubmit={handleSubmit}>
                 <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Email'/>
                 <input type="password" className="form-control" id="exampleInputPassword1" placeholder='Password'/>
-                <button className="login-modal-login-btn btn btn-primary">Submit</button>
+                <button className="login-modal-login-btn btn btn-primary" data-bs-target="#login-modal" data-bs-dismiss="modal">Submit</button>
               </form>
               <div className='login-footer'>
                 <button className='sign-in-with-btn-facebook'>
@@ -79,7 +79,7 @@ const SignupLogin = ({setIsLoggedIn}) => {
                 <input type="email" className="form-control" id="exampleInputEmail1" placeholder='Email'/>
                 <input type="password" className="form-control" id="exampleInputPassword1" placeholder='Password'/>
                 <input type="password" className="form-control" id="exampleInputPassword1" placeholder='Confirm Password'/>
-                <button className="login-modal-login-btn btn btn-primary">Submit</button>
+                <button className="login-modal-login-btn btn btn-primary" data-bs-target="#login-modal" data-bs-dismiss="modal">Submit</button>
               </form>
               <div className='login-footer'>
                 <button className='sign-in-with-btn-facebook'>

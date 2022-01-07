@@ -6,7 +6,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import { post0_image, post1_image, post2_image } from '../../assets/img/postImages'
 import { author0_image, author1_image, author2_image, author3_image } from '../../assets/img/authorImages'
 
-const GroupBody = () => {
+const GroupBody = ({isLoggedIn}) => {
 
   const [posts, setPosts] = useState([
     {
@@ -70,7 +70,7 @@ const GroupBody = () => {
         <div className="group-posts-div">
           { posts.map( (post) => <GroupPost key={post.id} post={post}/> ) }
         </div>
-        <Sidebar/>
+        <Sidebar isLoggedIn={isLoggedIn}/>
       </div>
     </div>
   )
